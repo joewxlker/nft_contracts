@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat ignition deploy ignition/modules/BusinessCard.ts --network sepolia",
+    "verify": "echo \"npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS ARGS\""
   },
   "keywords": [],
   "author": "",
